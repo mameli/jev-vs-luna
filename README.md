@@ -16,13 +16,13 @@ Download the original PNGs for sharing: [overview](assets/benchmark-overview.png
 and [accuracy by field](assets/accuracy-by-field.png). Both are 1800 × 1200 pixels.
 The cost chart scales the mean reported cost per call to 1,000 calls; it does
 not represent a separate 1,000-call experiment. Rebuild the charts from the
-published report with `uv run --group charts make_charts.py` (no API calls).
+published report with `uv run --group charts charts.py` (no API calls).
 
 **Luna scored slightly higher against the fixture labels; Jev was faster and
 cheaper per call with a known cost.** This is one synthetic diagnostic run,
 not evidence of a general model ranking.
 
-Executed `uv run compare_models.py --repeats 3 --seed 42`: 100 reviews ×
+Executed the benchmark with `--repeats 3 --seed 42`: 100 reviews ×
 3 repetitions × 2 models, plus one warmup per model, for **602 completed
 attempts**. The run took approximately 12 minutes (09:31–09:43 UTC).
 Luna used reasoning effort `none` and strict structured output; both models
@@ -105,6 +105,10 @@ independently labeled set of real reviews.
 - Dataset SHA-256:
   `79b1e3b16e3582d62a408100e71067c271379a1c05dada0af6e30d7fae595e68`.
 
+The report preserves the original run's source filenames and hashes. Since that
+run, `compare_models.py` was renamed to `benchmark.py` and `review_task.py` to
+`classification.py`; the measured results and dataset remain unchanged.
+
 ## Setup and offline checks
 
 ```bash
@@ -112,24 +116,24 @@ git clone https://github.com/mameli/jev-vs-luna.git
 cd jev-vs-luna
 uv sync
 uv run pytest -q
-uv run compare_models.py --dry-run
+uv run benchmark.py --dry-run
 ```
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/) first if
 needed. Offline tests and the dry run do not require an API key. Before running
 paid API calls, copy `.env.example` to `.env` and set `OPENROUTER_API_KEY`.
 
-The default test suite makes no API calls, even if a key is configured.
-Use `uv run pytest --live -q` to include the paid Jev integration tests.
+The test suite makes no API calls, even if a key is configured.
+For a paid integration smoke check, use the small comparison below.
 Never commit `.env` or credentials.
 
 ## Run a comparison
 
 ```bash
 # Small paid smoke run: 6 measured calls + 2 warmup calls.
-uv run compare_models.py --limit 3 --repeats 1
+uv run benchmark.py --limit 3 --repeats 1
 # Full comparison: 600 measured calls + 2 warmup calls.
-uv run compare_models.py --repeats 3 --seed 42
+uv run benchmark.py --repeats 3 --seed 42
 ```
 
 Options include `--data`, `--model`, `--effort`, `--timeout`, `--warmup`,
@@ -146,7 +150,7 @@ Reference: [OpenRouter structured outputs](https://openrouter.ai/docs/guides/fea
 `data/reviews_100.json` contains 50 explicitly labeled synthetic cases, each
 with two contextual variants (100 distinct texts). The second variant adds
 neutral order context. Variants share `case_id` and are **not independent
-samples**. Regenerate the file with `uv run make_dataset.py`.
+samples**. Regenerate the file with `uv run dataset.py`.
 
 Cases cover ordinary feedback, mixed sentiment, sarcasm, negation, historical
 defects, resolved complaints, and positive/neutral reviews with open questions.
@@ -201,12 +205,10 @@ by Git. No credentials are written to the manifest.
 
 ## Files
 
-- `review_task.py`: shared rubric, output schema, strict validation.
+- `classification.py`: shared rubric, output schema, strict validation.
 - `jev_client.py`: minimal Decisions API client.
-- `compare_models.py`: paired benchmark and durable reports.
-- `make_dataset.py`: explicit English cases and deterministic generation.
-- `make_charts.py`: reproducible PNG charts from the published benchmark report.
+- `benchmark.py`: paired benchmark and durable reports.
+- `dataset.py`: explicit English cases and deterministic generation.
+- `charts.py`: reproducible PNG charts from the published benchmark report.
 - `assets/`: chart images for the README and social posts.
-- `example.py`: support-ticket routing example (paid API call).
-- `example_reviews.py`: four-review example (paid API calls).
-- `tests/`: offline regression coverage and opt-in Jev integration tests.
+- `tests/`: offline regression coverage for the benchmark.

@@ -61,7 +61,7 @@ CASES = [
 RATINGS = {"positive": [4, 5], "neutral": [3, 3], "negative": [1, 2]}
 
 
-def build():
+def build_reviews():
     reviews = []
     for index, (topic, sentiment, reply, defect, text) in enumerate(CASES, 1):
         for variant, prefix in enumerate(("", "For context, I placed this order online last month. "), 1):
@@ -76,7 +76,7 @@ def build():
 def main():
     path = Path(__file__).parent / "data" / "reviews_100.json"
     path.parent.mkdir(exist_ok=True)
-    reviews = build()
+    reviews = build_reviews()
     path.write_text(json.dumps(reviews, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {len(reviews)} reviews to {path}")
 

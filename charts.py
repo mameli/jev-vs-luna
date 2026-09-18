@@ -1,6 +1,6 @@
 """Render shareable charts directly from the published benchmark report.
 
-Run: uv run --group charts make_charts.py
+Run: uv run --group charts charts.py
 """
 import json
 from pathlib import Path

@@ -22,4 +22,3 @@ package = false
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
-markers = ["live: opt-in tests that call paid external APIs"]

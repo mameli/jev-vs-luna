@@ -54,7 +54,7 @@ def validate_prediction(prediction):
     return prediction
 
 
-def normalize_jev(answers):
+def parse_jev_answers(answers):
     prediction = {field: answers[field]["choice"] for field in ("topic", "sentiment")}
     for field, key, maximum in (("rating", "score", 4), ("needs_reply", "noul", 1), ("defect", "noul", 1)):
         value = answers[field][key]
@@ -64,6 +64,6 @@ def normalize_jev(answers):
     return validate_prediction(prediction)
 
 
-def state_of(review):
+def review_state(review):
     # IDs, expected labels, and fixture metadata are never sent to either model.
     return {"text": review["text"]}
