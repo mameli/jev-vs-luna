@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "rev043",
+    "case_id": "case022",
+    "variant": 1,
+    "text": "The courier followed my delivery instructions perfectly.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev042",
+    "case_id": "case021",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Delivery arrived a day early with careful packaging.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev092",
+    "case_id": "case046",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. A very pleasant shopping experience overall.",
+    "expected": {
+      "topic": "other",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev010",
+    "case_id": "case005",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The lamp is neither impressive nor disappointing.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev066",
+    "case_id": "case033",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Support has ignored my refund request for two weeks.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev051",
+    "case_id": "case026",
+    "variant": 1,
+    "text": "The box was crushed, but the product works. My shipping complaint is already resolved.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev002",
+    "case_id": "case001",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The blender works perfectly and feels solid.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev071",
+    "case_id": "case036",
+    "variant": 1,
+    "text": "The support reply was neither good nor bad, but I still need clarification on returns.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev016",
+    "case_id": "case008",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The switch is jammed and the unit cannot be used. Please help.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev079",
+    "case_id": "case040",
+    "variant": 1,
+    "text": "The discount made this a bargain.",
+    "expected": {
+      "topic": "price",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev074",
+    "case_id": "case037",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The agent was rude, although the refund is now complete. No further action needed.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev011",
+    "case_id": "case006",
+    "variant": 1,
+    "text": "The blender will not turn on. Please arrange a replacement.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev056",
+    "case_id": "case028",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Excellent delivery service. Can you confirm the delivery date for my second parcel?",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev057",
+    "case_id": "case029",
+    "variant": 1,
+    "text": "Tracking says delivered, but I received nothing. Please investigate.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev073",
+    "case_id": "case037",
+    "variant": 1,
+    "text": "The agent was rude, although the refund is now complete. No further action needed.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev046",
+    "case_id": "case023",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Delivery was routine, neither quick nor slow.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev049",
+    "case_id": "case025",
+    "variant": 1,
+    "text": "Delivery was very late, but it arrived intact. No follow-up needed.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev093",
+    "case_id": "case047",
+    "variant": 1,
+    "text": "An ordinary shopping experience, nothing noteworthy.",
+    "expected": {
+      "topic": "other",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev077",
+    "case_id": "case039",
+    "variant": 1,
+    "text": "Excellent value for money at this price.",
+    "expected": {
+      "topic": "price",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev038",
+    "case_id": "case019",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The lining came unglued immediately. Please replace this defective bag.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev031",
+    "case_id": "case016",
+    "variant": 1,
+    "text": "I feared it would be faulty, but it works flawlessly.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev022",
+    "case_id": "case011",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. I dislike the rough fabric. I am keeping it and need no assistance.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev033",
+    "case_id": "case017",
+    "variant": 1,
+    "text": "Delivery was quick, but the laptop screen is dead. Please repair it.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev097",
+    "case_id": "case049",
+    "variant": 1,
+    "text": "I have no overall opinion yet. Where can I change my account language?",
+    "expected": {
+      "topic": "other",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev081",
+    "case_id": "case041",
+    "variant": 1,
+    "text": "The price is average for this market, neither cheap nor expensive.",
+    "expected": {
+      "topic": "price",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev050",
+    "case_id": "case025",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Delivery was very late, but it arrived intact. No follow-up needed.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev084",
+    "case_id": "case042",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Far too expensive for what it offers. I am not requesting any action.",
+    "expected": {
+      "topic": "price",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev027",
+    "case_id": "case014",
+    "variant": 1,
+    "text": "The device works adequately. Where can I download the manual?",
+    "expected": {
+      "topic": "product",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev088",
+    "case_id": "case044",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The current price seems average. Does it include tax?",
+    "expected": {
+      "topic": "price",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev034",
+    "case_id": "case017",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Delivery was quick, but the laptop screen is dead. Please repair it.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev009",
+    "case_id": "case005",
+    "variant": 1,
+    "text": "The lamp is neither impressive nor disappointing.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev048",
+    "case_id": "case024",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. My parcel is a week overdue and still missing. Please locate it.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev060",
+    "case_id": "case030",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Lovely, another week without my parcel. Can someone find it?",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev064",
+    "case_id": "case032",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Support replaced my broken kettle quickly. The replacement works; everything is resolved.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev075",
+    "case_id": "case038",
+    "variant": 1,
+    "text": "The support team was helpful. Could they also send my invoice copy?",
+    "expected": {
+      "topic": "support",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev045",
+    "case_id": "case023",
+    "variant": 1,
+    "text": "Delivery was routine, neither quick nor slow.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev099",
+    "case_id": "case050",
+    "variant": 1,
+    "text": "I cannot sign into my account and need help. This is frustrating.",
+    "expected": {
+      "topic": "other",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev053",
+    "case_id": "case027",
+    "variant": 1,
+    "text": "No opinion on delivery yet. Could you send me the tracking number?",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev086",
+    "case_id": "case043",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The advertised discount was missing at checkout. Please refund the difference.",
+    "expected": {
+      "topic": "price",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev013",
+    "case_id": "case007",
+    "variant": 1,
+    "text": "The battery dies after five minutes. I still need a fix.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev037",
+    "case_id": "case019",
+    "variant": 1,
+    "text": "The lining came unglued immediately. Please replace this defective bag.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev024",
+    "case_id": "case012",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The wrong size was sent. Please exchange it; the item itself works.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev040",
+    "case_id": "case020",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The product is average overall: useful features, awkward controls.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev041",
+    "case_id": "case021",
+    "variant": 1,
+    "text": "Delivery arrived a day early with careful packaging.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev019",
+    "case_id": "case010",
+    "variant": 1,
+    "text": "It never switched on. The refund is complete; no further help needed.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev067",
+    "case_id": "case034",
+    "variant": 1,
+    "text": "Three agents transferred me without resolving my billing problem.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev062",
+    "case_id": "case031",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Support answered my billing question immediately and resolved it.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev061",
+    "case_id": "case031",
+    "variant": 1,
+    "text": "Support answered my billing question immediately and resolved it.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev008",
+    "case_id": "case004",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. It works as described, but nothing about it stands out.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev035",
+    "case_id": "case018",
+    "variant": 1,
+    "text": "Shipping was late, but the outstanding product makes me very happy overall.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev100",
+    "case_id": "case050",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. I cannot sign into my account and need help. This is frustrating.",
+    "expected": {
+      "topic": "other",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev047",
+    "case_id": "case024",
+    "variant": 1,
+    "text": "My parcel is a week overdue and still missing. Please locate it.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev003",
+    "case_id": "case002",
+    "variant": 1,
+    "text": "The headphones sound fantastic and fit comfortably.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev052",
+    "case_id": "case026",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The box was crushed, but the product works. My shipping complaint is already resolved.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev017",
+    "case_id": "case009",
+    "variant": 1,
+    "text": "The chair leg snapped during normal use. I need a replacement.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev039",
+    "case_id": "case020",
+    "variant": 1,
+    "text": "The product is average overall: useful features, awkward controls.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev059",
+    "case_id": "case030",
+    "variant": 1,
+    "text": "Lovely, another week without my parcel. Can someone find it?",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev069",
+    "case_id": "case035",
+    "variant": 1,
+    "text": "Support gave a standard answer that settled my question. Average service.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev023",
+    "case_id": "case012",
+    "variant": 1,
+    "text": "The wrong size was sent. Please exchange it; the item itself works.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev063",
+    "case_id": "case032",
+    "variant": 1,
+    "text": "Support replaced my broken kettle quickly. The replacement works; everything is resolved.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev025",
+    "case_id": "case013",
+    "variant": 1,
+    "text": "Great camera, everything works. Could you explain how to enable the timer?",
+    "expected": {
+      "topic": "product",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev006",
+    "case_id": "case003",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Easy to assemble and very sturdy. Great desk.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev007",
+    "case_id": "case004",
+    "variant": 1,
+    "text": "It works as described, but nothing about it stands out.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev068",
+    "case_id": "case034",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Three agents transferred me without resolving my billing problem.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev083",
+    "case_id": "case042",
+    "variant": 1,
+    "text": "Far too expensive for what it offers. I am not requesting any action.",
+    "expected": {
+      "topic": "price",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev020",
+    "case_id": "case010",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. It never switched on. The refund is complete; no further help needed.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev080",
+    "case_id": "case040",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The discount made this a bargain.",
+    "expected": {
+      "topic": "price",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev044",
+    "case_id": "case022",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The courier followed my delivery instructions perfectly.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev091",
+    "case_id": "case046",
+    "variant": 1,
+    "text": "A very pleasant shopping experience overall.",
+    "expected": {
+      "topic": "other",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev021",
+    "case_id": "case011",
+    "variant": 1,
+    "text": "I dislike the rough fabric. I am keeping it and need no assistance.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev001",
+    "case_id": "case001",
+    "variant": 1,
+    "text": "The blender works perfectly and feels solid.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev096",
+    "case_id": "case048",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. A disappointing overall experience. I do not want follow-up contact.",
+    "expected": {
+      "topic": "other",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev058",
+    "case_id": "case029",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Tracking says delivered, but I received nothing. Please investigate.",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev094",
+    "case_id": "case047",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. An ordinary shopping experience, nothing noteworthy.",
+    "expected": {
+      "topic": "other",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev054",
+    "case_id": "case027",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. No opinion on delivery yet. Could you send me the tracking number?",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev090",
+    "case_id": "case045",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Great value. Is the same discount available on a second order?",
+    "expected": {
+      "topic": "price",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev026",
+    "case_id": "case013",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Great camera, everything works. Could you explain how to enable the timer?",
+    "expected": {
+      "topic": "product",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev072",
+    "case_id": "case036",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The support reply was neither good nor bad, but I still need clarification on returns.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev085",
+    "case_id": "case043",
+    "variant": 1,
+    "text": "The advertised discount was missing at checkout. Please refund the difference.",
+    "expected": {
+      "topic": "price",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev078",
+    "case_id": "case039",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Excellent value for money at this price.",
+    "expected": {
+      "topic": "price",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev065",
+    "case_id": "case033",
+    "variant": 1,
+    "text": "Support has ignored my refund request for two weeks.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev030",
+    "case_id": "case015",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Wonderful: a brand-new kettle that leaks everywhere. Please replace it.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev028",
+    "case_id": "case014",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The device works adequately. Where can I download the manual?",
+    "expected": {
+      "topic": "product",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev089",
+    "case_id": "case045",
+    "variant": 1,
+    "text": "Great value. Is the same discount available on a second order?",
+    "expected": {
+      "topic": "price",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev098",
+    "case_id": "case049",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. I have no overall opinion yet. Where can I change my account language?",
+    "expected": {
+      "topic": "other",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev005",
+    "case_id": "case003",
+    "variant": 1,
+    "text": "Easy to assemble and very sturdy. Great desk.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev055",
+    "case_id": "case028",
+    "variant": 1,
+    "text": "Excellent delivery service. Can you confirm the delivery date for my second parcel?",
+    "expected": {
+      "topic": "shipping",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev076",
+    "case_id": "case038",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The support team was helpful. Could they also send my invoice copy?",
+    "expected": {
+      "topic": "support",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev012",
+    "case_id": "case006",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The blender will not turn on. Please arrange a replacement.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev070",
+    "case_id": "case035",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Support gave a standard answer that settled my question. Average service.",
+    "expected": {
+      "topic": "support",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev087",
+    "case_id": "case044",
+    "variant": 1,
+    "text": "The current price seems average. Does it include tax?",
+    "expected": {
+      "topic": "price",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": true,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev014",
+    "case_id": "case007",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The battery dies after five minutes. I still need a fix.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev018",
+    "case_id": "case009",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The chair leg snapped during normal use. I need a replacement.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev029",
+    "case_id": "case015",
+    "variant": 1,
+    "text": "Wonderful: a brand-new kettle that leaks everywhere. Please replace it.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev032",
+    "case_id": "case016",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. I feared it would be faulty, but it works flawlessly.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev036",
+    "case_id": "case018",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. Shipping was late, but the outstanding product makes me very happy overall.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev095",
+    "case_id": "case048",
+    "variant": 1,
+    "text": "A disappointing overall experience. I do not want follow-up contact.",
+    "expected": {
+      "topic": "other",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev004",
+    "case_id": "case002",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The headphones sound fantastic and fit comfortably.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "positive",
+      "rating": [
+        4,
+        5
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  },
+  {
+    "id": "rev015",
+    "case_id": "case008",
+    "variant": 1,
+    "text": "The switch is jammed and the unit cannot be used. Please help.",
+    "expected": {
+      "topic": "product",
+      "sentiment": "negative",
+      "rating": [
+        1,
+        2
+      ],
+      "needs_reply": true,
+      "defect": true
+    }
+  },
+  {
+    "id": "rev082",
+    "case_id": "case041",
+    "variant": 2,
+    "text": "For context, I placed this order online last month. The price is average for this market, neither cheap nor expensive.",
+    "expected": {
+      "topic": "price",
+      "sentiment": "neutral",
+      "rating": [
+        3,
+        3
+      ],
+      "needs_reply": false,
+      "defect": false
+    }
+  }
+]

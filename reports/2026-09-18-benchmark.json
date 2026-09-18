@@ -1,0 +1,331 @@
+{
+  "started_at": "20260918T093134.708601Z",
+  "configuration": {
+    "data": "data/reviews_100.json",
+    "limit": 0,
+    "repeats": 3,
+    "model": "openai/gpt-5.6-luna",
+    "effort": "none",
+    "seed": 42,
+    "timeout": 60,
+    "warmup": 1,
+    "output": "results",
+    "dry_run": false
+  },
+  "models": {
+    "jev": "~typesafe/jev-latest",
+    "luna": "openai/gpt-5.6-luna"
+  },
+  "dataset_sha256": "79b1e3b16e3582d62a408100e71067c271379a1c05dada0af6e30d7fae595e68",
+  "source_sha256": {
+    "compare_models.py": "91d0d862eaadad17425b099ed5765a4eaea23e363baefac9ac58f57581d17c59",
+    "review_task.py": "a1098efc2e441a246f871d975847b840a8bac3ee6608beabf1da8f24dffa93af",
+    "jev_client.py": "bb76f9e78e67482d0574c0a797e148b8395127a53795c9ee1af6059a3a6f943b"
+  },
+  "status": "complete",
+  "completed_attempts": 602,
+  "run_id": "20260918T093134.708601Z",
+  "summary": {
+    "jev": {
+      "attempts": 300,
+      "successes": 299,
+      "errors": 1,
+      "accuracy_per_field": {
+        "topic": 0.9333333333333333,
+        "sentiment": 0.9366666666666666,
+        "rating": 0.9466666666666667,
+        "needs_reply": 0.9933333333333333,
+        "defect": 0.9966666666666667
+      },
+      "micro_accuracy": 0.9613333333333334,
+      "exact_match": 0.8833333333333333,
+      "macro_f1": {
+        "topic": 0.9307072700705337,
+        "sentiment": 0.9381243988152494,
+        "needs_reply": 0.9949200607359772,
+        "defect": 0.9989816700610998
+      },
+      "confusion": {
+        "topic": {
+          "product": {
+            "product": 110,
+            "shipping": 6,
+            "support": 4,
+            "price": 0,
+            "other": 0,
+            "ERROR": 0
+          },
+          "shipping": {
+            "product": 3,
+            "shipping": 57,
+            "support": 0,
+            "price": 0,
+            "other": 0,
+            "ERROR": 0
+          },
+          "support": {
+            "product": 0,
+            "shipping": 0,
+            "support": 48,
+            "price": 0,
+            "other": 0,
+            "ERROR": 0
+          },
+          "price": {
+            "product": 0,
+            "shipping": 0,
+            "support": 0,
+            "price": 41,
+            "other": 0,
+            "ERROR": 1
+          },
+          "other": {
+            "product": 0,
+            "shipping": 0,
+            "support": 6,
+            "price": 0,
+            "other": 24,
+            "ERROR": 0
+          }
+        },
+        "sentiment": {
+          "positive": {
+            "positive": 95,
+            "neutral": 0,
+            "negative": 0,
+            "ERROR": 1
+          },
+          "neutral": {
+            "positive": 0,
+            "neutral": 72,
+            "negative": 0,
+            "ERROR": 0
+          },
+          "negative": {
+            "positive": 6,
+            "neutral": 12,
+            "negative": 114,
+            "ERROR": 0
+          }
+        },
+        "needs_reply": {
+          "True": {
+            "True": 143,
+            "False": 0,
+            "ERROR": 1
+          },
+          "False": {
+            "True": 1,
+            "False": 155,
+            "ERROR": 0
+          }
+        },
+        "defect": {
+          "True": {
+            "True": 54,
+            "False": 0,
+            "ERROR": 0
+          },
+          "False": {
+            "True": 0,
+            "False": 245,
+            "ERROR": 1
+          }
+        }
+      },
+      "latency_all_attempts": {
+        "n": 300,
+        "min": 0.5200040830022772,
+        "median": 0.6474917500017909,
+        "mean": 0.8097019218302254,
+        "p95": 0.9104896249991725
+      },
+      "latency_successes": {
+        "n": 299,
+        "min": 0.5200040830022772,
+        "median": 0.6471001250029076,
+        "mean": 0.6751958835253105,
+        "p95": 0.9104896249991725
+      },
+      "reported_cost_usd": 0.009462684,
+      "cost_known_attempts": 300,
+      "cost_total_attempts": 301,
+      "cost_complete": false
+    },
+    "luna": {
+      "attempts": 300,
+      "successes": 300,
+      "errors": 0,
+      "accuracy_per_field": {
+        "topic": 0.9366666666666666,
+        "sentiment": 0.96,
+        "rating": 0.96,
+        "needs_reply": 1,
+        "defect": 1
+      },
+      "micro_accuracy": 0.9713333333333334,
+      "exact_match": 0.9066666666666666,
+      "macro_f1": {
+        "topic": 0.9193863793073973,
+        "sentiment": 0.9602684397309696,
+        "needs_reply": 1,
+        "defect": 1
+      },
+      "confusion": {
+        "topic": {
+          "product": {
+            "product": 111,
+            "shipping": 9,
+            "support": 0,
+            "price": 0,
+            "other": 0,
+            "ERROR": 0
+          },
+          "shipping": {
+            "product": 0,
+            "shipping": 60,
+            "support": 0,
+            "price": 0,
+            "other": 0,
+            "ERROR": 0
+          },
+          "support": {
+            "product": 0,
+            "shipping": 0,
+            "support": 48,
+            "price": 0,
+            "other": 0,
+            "ERROR": 0
+          },
+          "price": {
+            "product": 0,
+            "shipping": 0,
+            "support": 0,
+            "price": 42,
+            "other": 0,
+            "ERROR": 0
+          },
+          "other": {
+            "product": 0,
+            "shipping": 0,
+            "support": 10,
+            "price": 0,
+            "other": 20,
+            "ERROR": 0
+          }
+        },
+        "sentiment": {
+          "positive": {
+            "positive": 96,
+            "neutral": 0,
+            "negative": 0,
+            "ERROR": 0
+          },
+          "neutral": {
+            "positive": 1,
+            "neutral": 71,
+            "negative": 0,
+            "ERROR": 0
+          },
+          "negative": {
+            "positive": 6,
+            "neutral": 5,
+            "negative": 121,
+            "ERROR": 0
+          }
+        },
+        "needs_reply": {
+          "True": {
+            "True": 144,
+            "False": 0,
+            "ERROR": 0
+          },
+          "False": {
+            "True": 0,
+            "False": 156,
+            "ERROR": 0
+          }
+        },
+        "defect": {
+          "True": {
+            "True": 54,
+            "False": 0,
+            "ERROR": 0
+          },
+          "False": {
+            "True": 0,
+            "False": 246,
+            "ERROR": 0
+          }
+        }
+      },
+      "latency_all_attempts": {
+        "n": 300,
+        "min": 1.2742329590037116,
+        "median": 1.5559906039998168,
+        "mean": 1.6302563169165174,
+        "p95": 2.0842625419973047
+      },
+      "latency_successes": {
+        "n": 300,
+        "min": 1.2742329590037116,
+        "median": 1.5559906039998168,
+        "mean": 1.6302563169165174,
+        "p95": 2.0842625419973047
+      },
+      "reported_cost_usd": 0.04629,
+      "cost_known_attempts": 301,
+      "cost_total_attempts": 301,
+      "cost_complete": true
+    }
+  },
+  "derived": {
+    "jev": {
+      "correct_fields": 1442,
+      "valid_field_count": 1495,
+      "valid_only_micro_accuracy": 0.9645484949832775,
+      "cost_per_known_attempt_usd": 0.00003154228,
+      "resolved_models": [
+        "typesafe/jev-1.13-20260917"
+      ],
+      "providers": [
+        "TypeSafe"
+      ],
+      "correct_fields_by_repeat": [
+        483,
+        476,
+        483
+      ]
+    },
+    "luna": {
+      "correct_fields": 1457,
+      "valid_field_count": 1500,
+      "valid_only_micro_accuracy": 0.9713333333333334,
+      "cost_per_known_attempt_usd": 0.0001537873754152824,
+      "resolved_models": [
+        "openai/gpt-5.6-luna"
+      ],
+      "providers": [
+        "OpenAI"
+      ],
+      "correct_fields_by_repeat": [
+        486,
+        487,
+        484
+      ]
+    }
+  },
+  "errors": [
+    {
+      "model": "jev",
+      "review_id": "rev090",
+      "repeat": 2,
+      "phase": "measured",
+      "seconds": 41.02700737499981,
+      "error": {
+        "type": "HTTPError",
+        "http_status": 520
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[project]
+name = "jev-vs-luna"
+version = "0.1.0"
+description = "Reproducible English review-classification benchmark for Jev and Luna"
+requires-python = ">=3.10"
+dependencies = [
+    "python-dotenv>=1.0",
+    "requests>=2.31",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = ["live: opt-in tests that call paid external APIs"]
