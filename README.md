@@ -8,6 +8,16 @@ needed, and whether an actual product defect is reported.
 
 ## Full-run results — September 18, 2026
 
+![JEV vs Luna: field accuracy, median latency, and cost per 1,000 calls scaled from known costs](assets/benchmark-overview.png)
+
+![JEV vs Luna: accuracy by classification field, with API failures counted as incorrect](assets/accuracy-by-field.png)
+
+Download the original PNGs for sharing: [overview](assets/benchmark-overview.png)
+and [accuracy by field](assets/accuracy-by-field.png). Both are 1800 × 1200 pixels.
+The cost chart scales the mean reported cost per call to 1,000 calls; it does
+not represent a separate 1,000-call experiment. Rebuild the charts from the
+published report with `uv run --group charts make_charts.py` (no API calls).
+
 **Luna scored slightly higher against the fixture labels; Jev was faster and
 cheaper per call with a known cost.** This is one synthetic diagnostic run,
 not evidence of a general model ranking.
@@ -195,6 +205,8 @@ by Git. No credentials are written to the manifest.
 - `jev_client.py`: minimal Decisions API client.
 - `compare_models.py`: paired benchmark and durable reports.
 - `make_dataset.py`: explicit English cases and deterministic generation.
+- `make_charts.py`: reproducible PNG charts from the published benchmark report.
+- `assets/`: chart images for the README and social posts.
 - `example.py`: support-ticket routing example (paid API call).
 - `example_reviews.py`: four-review example (paid API calls).
 - `tests/`: offline regression coverage and opt-in Jev integration tests.

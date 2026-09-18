@@ -9,6 +9,9 @@ dependencies = [
 ]
 
 [dependency-groups]
+charts = [
+    "matplotlib>=3.10.9",
+]
 dev = [
     "pytest>=8.0",
 ]
